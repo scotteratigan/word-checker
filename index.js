@@ -6,9 +6,7 @@ module.exports = class WordChecker {
     this.language = language.toLowerCase();
     const dictionaryArr = loadDictionary(`${language}.txt`);
     this.wordTrie = buildWordTrie(dictionaryArr);
-  }
-  getLang() {
-    return this.language;
+    this.numWords = dictionaryArr.length;
   }
   isWord(letterString) {
     const letterArr = letterString.toLowerCase().split("");
@@ -36,10 +34,10 @@ function loadDictionary(source) {
       .readFileSync(source)
       .toString()
       .split("\r\n");
-    console.log("Dictionary loaded, words:", wordList.length);
     return wordList;
   } catch (err) {
     console.error("Error, unable to load dictionary", source);
+    return {};
   }
 }
 

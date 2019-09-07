@@ -1,0 +1,28 @@
+{
+  "name": "word-checker",
+  "version": "1.0.1",
+  "description": "Allows you to quickly determine if a string of characters is a correctly spelled word.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scotteratigan/word-checker.git"
+  },
+  "keywords": [
+    "trie",
+    "word",
+    "search"
+  ],
+  "author": "Scott E Ratigan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scotteratigan/word-checker/issues"
+  },
+  "homepage": "https://github.com/scotteratigan/word-checker#readme"
+}
